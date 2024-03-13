@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+
 export default function AboutUs(props) {
   return (
-    <>
+    <div className={` my-4 py-2 px-4 bg-${props.Mode} text-${props.Mode==='light'?'dark':'light'}`}>
         <div className="container">
             <footer className="row row-cols-5 py-5 my-5 border-top">
             <div className='col'>
@@ -31,10 +32,10 @@ export default function AboutUs(props) {
                 <div/>
             </footer>
         </div>
-    </>
+    </div>
   )
 }
- 
+
 AboutUs.propTypes = {name: PropTypes.string.isRequired}
 
 AboutUs.defaultProps = {name: "Website Name Here"}
