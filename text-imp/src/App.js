@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import AboutUs from './components/AboutUs';
@@ -39,8 +40,13 @@ function App() {
     <div className={`bg-${Mode} `}>
     <Navbar title="TextImp" about="About Us" Mode={Mode} toggle={handleMode}/>
     <Alert alert={alert}/>
-    <TextMod heading="Enter your text here !!!" Mode={Mode} alert={handleAlert}/>
-    <AboutUs name="TextImp" Mode={Mode}/>
+    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TextMod heading="Enter your text here !!!" Mode={Mode} alert={handleAlert}/>}/>
+        <Route path="/about" element={<AboutUs name="TextImp" Mode={Mode}/>}/>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
