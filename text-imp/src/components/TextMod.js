@@ -46,7 +46,7 @@ export default function TextMod(props) {
   return (
     <div className={`bg-${props.Mode} `}>
     <div className={`container my-4 py-2 px-4 bg-${props.Mode} `}>
-        <h3><label for="myText" className={`form-label text-${props.Mode==='light'?'dark':'light'} bg-${props.Mode}`} >{props.heading}</label></h3>
+        <h3><label htmlFor="myText" className={`form-label text-${props.Mode==='light'?'dark':'light'} bg-${props.Mode}`} >{props.heading}</label></h3>
         <textarea className={`form-control my-3 mb-7 text-${props.Mode==='light'?'dark':'light'} bg-${props.Mode}`} placeholder="Enter text here ..." value ={text} onChange={handleOnChange} id="myText" rows="8" ></textarea>
     </div>
     <div className='container my-5'>
