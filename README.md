@@ -6,7 +6,6 @@
 <li>Converting to lowercase.</li>
 <li>Remove extra space.</li>
 <li>Clear Textarea</li>
-<li></li>
 <li>Count the numbers of word, character, sentence.</li>
 <li>Calculate the reading speed of the given text.</li>
 </ul>
