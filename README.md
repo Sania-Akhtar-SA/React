@@ -1,6 +1,6 @@
 # React
-<h4>Here is my React App wich is based on the Text analysing.</h4>
-<em>The following activities can be performed by this app :</em>
+<h4>Here is my React App which is based on the Text analysing.</h4>
+<em>The following activities can be performed by using this app :</em>
 <ul>
 <li>Converting to UPPERCASE.</li>
 <li>Converting to lowercase.</li>
