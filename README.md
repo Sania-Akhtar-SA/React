@@ -1,6 +1,7 @@
 # React
 <h4>Here is my React App which is based on the Text analysing.</h4>
-<em>The following activities can be performed by using this app :</em>
+<h6><em>The following activities can be performed by using this app :</em></h6>
+<br>
 <br>
 <ul>
 <li>Converting to UPPERCASE.</li>
